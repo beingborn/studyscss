@@ -1,19 +1,20 @@
 h1 {
-  color: #000;
+  color: #151515;
 }
 
 p {
-  color: #000;
+  color: #151515;
 }
 
 .bg {
-  background-color: #000;
+  background-color: #151515;
 }
 
 ul li {
   list-style-type: none;
   padding: 10px;
   border: 1px solid gray;
+  color: blue;
 }
 ul .active {
   background-color: skyblue;
@@ -22,6 +23,27 @@ ul .active {
 ul li:hover {
   background-color: red;
   color: white;
+}
+
+.btn-yellow {
+  padding: 12px 12px;
+  border-radius: 8px;
+  color: brown;
+  background-color: yellow;
+}
+
+.btn-green {
+  padding: 12px 12px;
+  border-radius: 8px;
+  color: greenyellow;
+  background-color: green;
+}
+
+.btn-pink {
+  padding: 12px 12px;
+  border-radius: 8px;
+  color: purple;
+  background-color: pink;
 }
 
 /*# sourceMappingURL=style.css.map */
