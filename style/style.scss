@@ -1,0 +1,23 @@
+$color: #000;
+ 
+h1 { color: $color; }
+p { color: $color; }
+.bg { background-color: $color; }
+
+ul {
+  li {
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid gray;
+  }
+
+  .active {
+    background-color: skyblue;
+    color: white;
+  }
+
+  li:hover {
+    background-color: red;
+    color: white;
+  }
+}
