@@ -1,56 +1,15 @@
 @import "reset";
+@import "header";
 
-$color: #151515;
-$primary-color : blue;
+.--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 // header 
 
-.header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  border: 1px solid salmon;
-  
-  .gnb {
-    padding: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.header__menu {
-  display: flex;
-  align-items: center;
-  border: 1px solid blue;
-
-  &::before {
-    content: '';
-    margin-right: 8px;
-    width: 20px;
-    height: 20px;
-    background-color: lightgray;
-    display: inline-block;
-  }
-}
-
-.header__login {
-  width: 85px;
-  height: 36px;
-  line-height: 36px;
-  padding: 8px 16px;
-  color: #080410;
-  text-align: center;
-  border-radius: 24px;
-  border: 2px solid #17191d;
-
-  &:hover {
-    color: #fff;
-    background-color: #07f;
-    border-color: #07f;
-    transition: all .5s;
-  }
-}
 
 
 
@@ -62,43 +21,3 @@ $primary-color : blue;
 
 
 
-h1 { color: $color; }
-p { color: $color; }
-.bg { background-color: $color; }
-
-
-// 리스트 
-
-ul {
-  li {
-    list-style-type: none;
-    padding: 10px;
-    border: 1px solid gray;
-    color: $primary-color;
-  }
-
-  .active {
-    background-color: skyblue;
-    color: white;
-  }
-
-  li:hover {
-    background-color: red;
-    color: white;
-  }
-}
-
-// SCSS로 바꾸기, 구멍이 되어야 될 요소  == background-color, color
-
-@mixin alertBox($backgroundColor,$color){
-  padding: 12px 12px;
-  border-radius: 8px;
-  color: $color;
-  background-color: $backgroundColor;
-} 
-
-.btn-yellow {@include alertBox(yellow,brown )}
-.btn-green {@include alertBox(green,greenyellow)}
-.btn-pink {@include alertBox(pink, purple)}
-
-// aleft box
