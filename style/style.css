@@ -56,27 +56,37 @@ a {
 button {
   border: 0;
   background: transparent;
+  padding: 0;
 }
 
 .header {
+  display: block;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border: 1px solid salmon;
   height: 62px;
 }
-.header .gnb {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 12px;
+.header .header__logo {
+  text-align: center;
+  height: 62px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .right-gnb {
+  position: absolute;
+  right: 12px;
+  top: 0;
+  height: 62px;
+  line-height: 62px;
 }
 
 .header__menu {
   display: flex;
   align-items: center;
-  border: 1px solid blue;
+  margin-right: auto;
+  width: 107px;
+  height: 62px;
+  margin-left: 12px;
 }
 .header__menu::before {
   content: "";
@@ -109,16 +119,16 @@ button {
 }
 
 .nav {
+  position: relative;
   height: 100px;
   width: 100%;
-  border: 1px solid green;
+  border-top: 1px solid black;
 }
 .nav ul {
   display: flex;
 }
 .nav li {
   width: 138px;
-  border: 1px solid salmon;
 }
 .nav li a {
   position: relative;
@@ -140,6 +150,74 @@ button {
   align-items: center;
   padding: 0 12px;
   height: 100%;
+}
+
+.btn__cs::after {
+  content: "";
+  position: absolute;
+  height: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 240px;
+  box-sizing: border-box;
+  text-align: right;
+  z-index: 3;
+  background-image: url(https://ssl.nexon.com/s2/game/fc/online/obt/sprite_210600.png);
+  background-position: 0px -340px;
+  width: 177px;
+  height: 42px;
+  width: 177px;
+}
+
+.btn__start {
+  position: absolute;
+  width: 260px;
+  height: 99px;
+  right: 0;
+  top: 0;
+  background: url(//ssl.nexon.com/s2/game/fc/online/obt/gamestart/bg_gamestart.png) right 0 no-repeat;
+  background-position: 0 0;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.top__banner {
+  margin-top: 100px;
+  height: 120px;
+  background-color: gray;
+  position: relative;
+}
+.top__banner .top__banner__text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top__banner .top__banner__text > p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.main__banner {
+  width: 100%;
+  height: 640px;
+  background-color: pink;
+}
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
 }
 
 .--flex {
