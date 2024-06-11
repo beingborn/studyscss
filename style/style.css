@@ -209,7 +209,53 @@ button {
 .main__banner {
   width: 100%;
   height: 640px;
-  background-color: pink;
+  background: url(/img/main__visual_0.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 200px;
+}
+.banner__nav ul li {
+  height: 73px;
+  line-height: 73px;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e9;
+  width: 120px;
+  background: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-left: 1px solid #e6e6e9;
+}
+.banner__nav ul li a {
+  color: #3e3d55;
+}
+.banner__nav ul li a:hover {
+  font-weight: bold;
+  color: #07c9a0;
+}
+.banner__nav .banner__move {
+  margin-top: 12px;
+  height: 60px;
+  background-color: #393854;
+  display: flex;
+}
+.banner__nav .banner__move button {
+  width: 50%;
+  position: relative;
+}
+.banner__nav .banner__move button:nth-child(1) {
+  border-right: 1px solid #fff;
+}
+.banner__nav .banner__move .left--move {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 html, body {
