@@ -61,6 +61,24 @@
     }
   }
 
+  @mixin moveIcon($scale){
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scaleX($scale);
+    width: 20px;
+    height: 20px;
+    background: url(/img/arrow-move.svg) no-repeat center;
+  }
+  
+  .left--move {
+    @include moveIcon(1); // degree를 180deg로 수정
+  }
+  
+  .right--move {
+    @include moveIcon(-1); // degree를 0deg로 수정
+  }
+
   .banner__move {
     margin-top: 12px;
     height: 60px;
@@ -77,11 +95,11 @@
     }
 
     .left--move {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
+    
     }
+
+    .right--move {
+    }    
   }
 
 

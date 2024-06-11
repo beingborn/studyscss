@@ -238,6 +238,24 @@ button {
   font-weight: bold;
   color: #07c9a0;
 }
+.banner__nav .left--move {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scaleX(1);
+  width: 20px;
+  height: 20px;
+  background: url(/img/arrow-move.svg) no-repeat center;
+}
+.banner__nav .right--move {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scaleX(-1);
+  width: 20px;
+  height: 20px;
+  background: url(/img/arrow-move.svg) no-repeat center;
+}
 .banner__nav .banner__move {
   margin-top: 12px;
   height: 60px;
@@ -251,13 +269,6 @@ button {
 .banner__nav .banner__move button:nth-child(1) {
   border-right: 1px solid #fff;
 }
-.banner__nav .banner__move .left--move {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
 html, body {
   height: 100%;
 }
