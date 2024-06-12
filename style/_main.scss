@@ -14,7 +14,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
     > p {
       font-size: 18px;
@@ -40,7 +40,7 @@
   right: 200px;
 
   ul {
-    li{
+    li {
       height: 73px;
       line-height: 73px;
       text-align: center;
@@ -53,7 +53,7 @@
 
       a {
         color: #3e3d55;
-        &:hover{
+        &:hover {
           font-weight: bold;
           color: #07c9a0;
         }
@@ -61,7 +61,7 @@
     }
   }
 
-  @mixin moveIcon($scale){
+  @mixin moveIcon($scale) {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -70,11 +70,11 @@
     height: 20px;
     background: url(/img/arrow-move.svg) no-repeat center;
   }
-  
+
   .left--move {
     @include moveIcon(1); // degree를 180deg로 수정
   }
-  
+
   .right--move {
     @include moveIcon(-1); // degree를 0deg로 수정
   }
@@ -87,20 +87,11 @@
 
     button {
       width: 50%;
-      position: relative;      
+      position: relative;
     }
 
-    button:nth-child(1){
+    button:nth-child(1) {
       border-right: 1px solid #fff;
     }
-
-    .left--move {
-    
-    }
-
-    .right--move {
-    }    
   }
-
-
 }

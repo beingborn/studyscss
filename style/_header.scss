@@ -30,7 +30,7 @@
   margin-left: 12px;
 
   &::before {
-    content: '';
+    content: "";
     margin-right: 8px;
     width: 20px;
     height: 20px;
@@ -53,12 +53,14 @@
     color: #fff;
     background-color: #07f;
     border-color: #07f;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 }
 
 .right-icon {
-  &1, &2, &3 {
+  &1,
+  &2,
+  &3 {
     margin-right: 8px;
   }
 }
@@ -80,6 +82,11 @@
     color: #0b0b0c;
     display: inline-block;
     line-height: 100px;
+
+    .--strong {
+      position: absolute;
+      top: 0;
+    }
   }
 }
 
@@ -99,7 +106,7 @@
 
 .btn__cs {
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     height: 45px;
     top: 50%;
@@ -122,10 +129,9 @@
   height: 99px;
   right: 0;
   top: 0;
-  background: url(//ssl.nexon.com/s2/game/fc/online/obt/gamestart/bg_gamestart.png) right 0 no-repeat;
+  background: url(//ssl.nexon.com/s2/game/fc/online/obt/gamestart/bg_gamestart.png)
+    right 0 no-repeat;
   background-position: 0 0;
   overflow: hidden;
   z-index: 2;
 }
-
-

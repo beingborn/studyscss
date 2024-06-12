@@ -137,6 +137,10 @@ button {
   display: inline-block;
   line-height: 100px;
 }
+.nav li a .--strong {
+  position: absolute;
+  top: 0;
+}
 
 .nav__logo {
   width: 65px;
@@ -269,12 +273,165 @@ button {
 .banner__nav .banner__move button:nth-child(1) {
   border-right: 1px solid #fff;
 }
-html, body {
+
+.middle__guide {
+  z-index: 10;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.middle__nav {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  line-height: 50px;
+  border-radius: 3px;
+  z-index: 10;
+}
+.middle__nav li:not(:last-child) {
+  text-align: center;
+  flex: 0 1 20%;
+  border-right: 1px solid lightgray;
+}
+.middle__nav li:last-child {
+  width: 50px;
+  height: 50px;
+}
+.middle__nav li a {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3e3d55;
+}
+
+.column__guide {
+  height: 575px;
+  position: relative;
+}
+.column__guide .column-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.column__guide .column__header {
+  height: 50px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid lightgray;
+}
+.column__guide .column__header h2 {
+  font-size: 21px;
+  color: #3e3d55;
+  line-height: 50px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.column__guide .column__header h2 .more-btn {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+.column__guide .column__header h2 .more-btn:after {
+  content: "";
+  display: inline-block;
+  background: url(/img/baseline-plus.svg) no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.column__guide .notice {
+  width: calc(40% - 20px);
+}
+.column__guide .notice .notice__wrap {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid lightgray;
+}
+.column__guide .notice .notice__wrap span {
+  padding-right: 4px;
+}
+.column__guide .notice .notice__wrap .notice__tit {
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+.column__guide .notice .notice__wrap p {
+  color: gray;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.column__guide .halftime {
+  width: calc(30% - 20px);
+}
+.column__guide .halftime .column__content {
+  padding-top: 24px;
+}
+.column__guide .halftime .column__content img {
+  width: 100%;
+  height: auto;
+}
+.column__guide .halftime .column__content .halftime__tit {
+  max-height: 54px;
+  font-size: 18px;
+  color: #151432;
+  font-weight: 600;
+  margin-top: 25px;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.column__guide .halftime .column__content .desc {
+  padding-top: 12px;
+}
+.column__guide .halftime .column__content .column__info {
+  position: absolute;
+  bottom: 8px;
+}
+.column__guide .profile {
+  width: calc(30% - 20px);
+}
+.column__guide .notice-btn {
+  display: flex;
+}
+.column__guide .notice-btn button {
+  width: 50%;
+  text-align: center;
+  padding: 20px 0;
+  color: lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.column__guide .notice-btn button:nth-child(1) {
+  border-right: 1px solid lightgray;
+}
+.column__guide .notice-btn button .btn--on {
+  color: black;
+  border-color: #04e45f;
+}
+
+html,
+body {
   height: 100%;
 }
 
 #wrap {
   min-height: 100%;
+}
+
+.inner {
+  width: 1440px;
+  margin: 0px auto;
 }
 
 .--flex {
@@ -283,4 +440,26 @@ html, body {
   align-items: center;
 }
 
-/*# sourceMappingURL=style.css.map */
+.--strong {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #07c9a0;
+}
+
+.--main-color {
+  color: #04e45f;
+}
+
+.desc {
+  max-height: 84px;
+  font-size: 14px;
+  color: #3e3d55;
+  margin-top: 14px;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}/*# sourceMappingURL=style.css.map */

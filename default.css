@@ -1,0 +1,94 @@
+.box {
+  background-color: pink;
+  background-image: url(../images/pattern.gif);
+  background-repeat: no-repeat;
+  background-size: 33px auto;
+  background-position: right top;
+}
+.box p {
+  font-size: 77px;
+  color: yellow;
+}
+.box {
+  border: 5px dashed hotpink;
+}
+.box:hover {
+  background-color: aquamarine;
+}
+.nemo1 {
+  text-decoration: line-through;
+}
+
+.nemo1 {
+  color: #0cc;
+}
+.nemo2 {
+  color: #fc0;
+}
+.nemo3 {
+  color: #777;
+}
+
+.nemo3 {
+  font-size: 50px;
+}
+
+.nemo2 {
+  font-size: 100%;
+}
+
+.r4, .r3, .r2, .r1 {
+  width: 77px;
+  height: 77px;
+  border: 10px solid #fc0;
+}
+
+.yellowCircle, .r2, .r1 {
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.r3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.r4 {
+  display: flex;
+  justify-content: right;
+  align-items: top;
+}
+
+.r1 {
+  margin-left: 10px;
+}
+
+.r2 {
+  margin-left: 20px;
+}
+
+.r3 {
+  margin-left: 30px;
+}
+
+.r4 {
+  margin-left: 40px;
+}
+
+.z {
+  background-color: aquamarine;
+  width: 100px;
+}
+
+.k1 {
+  background-color: yellow;
+}
+
+.k2 {
+  background-color: hotpink;
+}
+
+.k3 {
+  background-color: #0cc;
+}/*# sourceMappingURL=default.css.map */
