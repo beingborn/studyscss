@@ -402,6 +402,10 @@ button {
 .column__guide .profile {
   width: calc(30% - 20px);
 }
+.column__guide .profile .column__content {
+  padding-top: 24px;
+  color: #07c9a0;
+}
 .column__guide .notice-btn {
   display: flex;
 }

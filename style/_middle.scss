@@ -1,3 +1,5 @@
+@import "common.scss";
+
 .middle__guide {
   z-index: 10;
   margin-top: 30px;
@@ -146,6 +148,11 @@
 
   .profile {
     width: calc(30% - 20px);
+
+    .column__content {
+      padding-top: 24px;
+      color: $main-color;
+    }
   }
 
   .notice-btn {
