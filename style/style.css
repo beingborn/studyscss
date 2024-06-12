@@ -405,21 +405,54 @@ button {
 .column__guide .profile .column__content {
   padding-top: 24px;
   color: #07c9a0;
+  text-align: center;
 }
-.column__guide .notice-btn {
+.column__guide .profile .column__content .column__login {
+  width: calc(100% - 20px);
+  height: 60px;
+  background-color: #04e45f;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.column__guide .profile .login__img {
+  background: url(//ssl.nexon.com/s2/game/fc/online/obt/widemain/alert_before_login.png) center 8px no-repeat;
+  background-size: 90px auto;
+  display: inline-block;
+  width: 90px;
+  height: 72px;
+}
+.column__guide .profile .login__alert {
+  text-align: center;
+  padding: 32px 0;
+}
+.column__guide .profile .login__alert p {
+  font-size: 14px;
+  color: #837fff;
+  text-align: center;
+  margin-top: 10px;
+}
+.column__guide .profile .search {
+  width: calc(100% - 20px);
+  height: 60px;
+  border: 1px solid black;
+  margin: 0px auto;
+}
+
+.notice-btn {
   display: flex;
 }
-.column__guide .notice-btn button {
+.notice-btn button {
   width: 50%;
   text-align: center;
   padding: 20px 0;
   color: lightgray;
   border-bottom: 1px solid lightgray;
 }
-.column__guide .notice-btn button:nth-child(1) {
+.notice-btn button:nth-child(1) {
   border-right: 1px solid lightgray;
 }
-.column__guide .notice-btn button .btn--on {
+.notice-btn button .btn--on {
   color: black;
   border-color: #04e45f;
 }
