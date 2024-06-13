@@ -225,7 +225,16 @@
                 <span class="login__img"></span>
                 <p>로그인이 필요합니다.</p>
               </div>
-              <div class="search"></div>
+              <div class="search">
+                <form name="player-search" class="search__form">
+                  <select>
+                    <option value="club">구단주</option>
+                    <option value="player">선수</option>
+                  </select>
+                  <input type="text" placeholder="선수명 입력" />
+                  <button type="button" class="search--submit"></button>
+                </form>
+              </div>
               <div class="login__guide"></div>
             </div>
           </div>
