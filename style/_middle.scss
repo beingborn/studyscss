@@ -1,9 +1,13 @@
 @import "common.scss";
 
+.middle__bg {
+  background-color: #eee;
+}
+
 .middle__guide {
   z-index: 10;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .middle__nav {
@@ -245,6 +249,36 @@
       }
     }
   }
+
+  .login__guide {
+    margin-top: 20px;
+    padding: 0 12px;
+
+    .login__bg {
+      width: 100%;
+      background: #f9f9fb;
+
+      a {
+        // box - sizing이 border-box가 아니기 때문에 padding 사용 시 전체를 덮게 되는 듯
+        display: flex;
+        align-items: center;
+        line-height: 68px;
+        position: relative;
+        margin: 0 18px;
+        font-size: 15px;
+        color: #3e3d55;
+        border-bottom: 1px solid lightgray;
+
+        &:after {
+          content: "";
+          width: 6px;
+          height: 11px;
+          background: url(/img/ico_arr.png) 0 0 no-repeat;
+          margin-left: auto;
+        }
+      }
+    }
+  }
 }
 
 .notice-btn {
@@ -264,6 +298,81 @@
     .btn--on {
       color: black;
       border-color: #04e45f;
+    }
+  }
+}
+
+// 하단
+
+.co__wrap2 {
+  margin: 50px auto;
+
+  .multi__wrap {
+    background-color: #fff;
+    height: 230px;
+
+    header {
+      padding: 0 24px;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid lightgray;
+    }
+
+    .content__wrap {
+      height: calc(100% - 50px);
+      position: relative;
+      z-index: 1000;
+
+      ul {
+        width: 120px;
+        height: 180px;
+
+        li {
+          height: calc(180px / 4);
+          line-height: calc(180px / 4);
+          text-align: center;
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-bottom: 1px solid lightgray;
+            border-right: 1px solid lightgray;
+          }
+        }
+      }
+
+      .content__slide {
+        width: calc(100% - 120px);
+
+        .content__overflow {
+          padding: 0 24px;
+          overflow: hidden;
+          position: relative;
+
+          ul {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            li {
+              display: inline-block;
+              margin-right: 12px;
+              width: 230px;
+              height: 130px;
+              background: gray;
+
+              a {
+                border: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
