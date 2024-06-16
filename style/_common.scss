@@ -4,3 +4,13 @@ $main-color: #07c9a0;
   width: 100%;
   position: relative;
 }
+
+.column__title {
+  font-size: 21px;
+  color: #3e3d55;
+  line-height: 50px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
