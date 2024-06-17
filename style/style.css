@@ -638,6 +638,10 @@ button {
   background: url(/img//mqdefault.jpg) no-repeat center;
 }
 
+.live__content {
+  padding-bottom: 50px;
+  border-bottom: 1px solid gray;
+}
 .live__content > div {
   display: flex;
   align-items: flex-start;

@@ -386,6 +386,9 @@
 }
 
 .live__content {
+  padding-bottom: 50px;
+  border-bottom: 1px solid gray;
+
   > div {
     display: flex;
     align-items: flex-start;
