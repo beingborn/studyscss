@@ -303,6 +303,11 @@ button {
   -webkit-box-orient: vertical;
 }
 
+.info {
+  color: #bababa;
+  font-size: 13px;
+}
+
 .middle__bg {
   background-color: #eee;
 }
@@ -632,6 +637,10 @@ button {
   background: url(/img//mqdefault.jpg) no-repeat center;
 }
 
+.live__content > div {
+  display: flex;
+  align-items: flex-start;
+}
 .live__content .column__title {
   border-bottom: 1px solid gray;
 }
@@ -658,6 +667,7 @@ button {
   width: calc(100% - 673px);
 }
 .live__content .live__news .content {
+  padding-right: 50px;
   height: 455px;
   overflow: hidden;
   clear: both;
@@ -748,6 +758,9 @@ button {
   width: 673px;
   border: 1px solid pink;
 }
+.live__content .league__rank .content {
+  padding-left: 50px;
+}
 
 .co__wrap {
   width: 100%;
@@ -778,6 +791,11 @@ button {
   -webkit-box-orient: vertical;
 }
 
+.info {
+  color: #bababa;
+  font-size: 13px;
+}
+
 html,
 body {
   height: 100%;
@@ -788,7 +806,7 @@ body {
 }
 
 .inner {
-  width: 1440px;
+  width: 1560px;
   margin: 0px auto;
 }
 

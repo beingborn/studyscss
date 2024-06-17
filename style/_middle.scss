@@ -385,6 +385,11 @@
 }
 
 .live__content {
+  > div {
+    display: flex;
+    align-items: flex-start;
+  }
+
   .column__title {
     border-bottom: 1px solid gray;
 
@@ -414,6 +419,7 @@
     width: calc(100% - 673px);
 
     .content {
+      padding-right: 50px;
       height: 455px;
       overflow: hidden;
       clear: both;
@@ -516,5 +522,9 @@
   .league__rank {
     width: 673px;
     border: 1px solid pink;
+
+    .content {
+      padding-left: 50px;
+    }
   }
 }
