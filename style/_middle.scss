@@ -287,6 +287,12 @@
 .notice-btn {
   display: flex;
 
+  .btn--on {
+    color: black;
+    border-color: #04e45f;
+    font-weight: 600;
+  }
+
   button {
     width: 50%;
     text-align: center;
@@ -296,11 +302,6 @@
 
     &:nth-child(1) {
       border-right: 1px solid lightgray;
-    }
-
-    .btn--on {
-      color: black;
-      border-color: #04e45f;
     }
   }
 }
@@ -521,7 +522,6 @@
 
   .league__rank {
     width: 673px;
-    border: 1px solid pink;
 
     .content {
       padding-left: 50px;

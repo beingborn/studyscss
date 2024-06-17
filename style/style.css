@@ -555,6 +555,11 @@ button {
 .notice-btn {
   display: flex;
 }
+.notice-btn .btn--on {
+  color: black;
+  border-color: #04e45f;
+  font-weight: 600;
+}
 .notice-btn button {
   width: 50%;
   text-align: center;
@@ -564,10 +569,6 @@ button {
 }
 .notice-btn button:nth-child(1) {
   border-right: 1px solid lightgray;
-}
-.notice-btn button .btn--on {
-  color: black;
-  border-color: #04e45f;
 }
 
 .co__wrap {
@@ -756,7 +757,6 @@ button {
 }
 .live__content .league__rank {
   width: 673px;
-  border: 1px solid pink;
 }
 .live__content .league__rank .content {
   padding-left: 50px;
