@@ -33,3 +33,20 @@ $main-color: #07c9a0;
   color: #bababa;
   font-size: 13px;
 }
+
+.market__lank {
+  .content {
+    .co__wrap--flex {
+      display: flex;
+
+      .squad {
+        width: 575px;
+        border: 1px solid midnightblue;
+      }
+
+      .trade__market {
+        width: calc(100% / 2 - 575px);
+      }
+    }
+  }
+}

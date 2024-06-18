@@ -308,6 +308,17 @@ button {
   font-size: 13px;
 }
 
+.market__lank .content .co__wrap--flex {
+  display: flex;
+}
+.market__lank .content .co__wrap--flex .squad {
+  width: 575px;
+  border: 1px solid midnightblue;
+}
+.market__lank .content .co__wrap--flex .trade__market {
+  width: calc(50% - 575px);
+}
+
 .middle__bg {
   background-color: #eee;
 }
@@ -765,6 +776,99 @@ button {
 .live__content .league__rank .content {
   padding-left: 50px;
 }
+.live__content .league__rank .rank__tab ul {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.live__content .league__rank .rank__tab ul li {
+  width: 16.6666666667%;
+  text-align: center;
+}
+.live__content .league__rank .rank__tab ul li .active {
+  border-bottom: 3px solid #07c9a0;
+  color: #000;
+  font-weight: 600;
+}
+.live__content .league__rank .rank__tab ul li a {
+  display: block;
+  font-size: 14px;
+  color: #9695a0;
+  line-height: 70px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  font-weight: 400;
+  position: relative;
+}
+.live__content .league__rank .rank__tab ul li a::after {
+  position: absolute;
+  top: 19px;
+  right: 0;
+  width: 1px;
+  height: 30px;
+  background-color: #c9c9c9;
+  content: "";
+}
+.live__content .league__rank .rank__tab ul li .last__con::after {
+  display: none;
+}
+
+.league__table {
+  padding-top: 12px;
+}
+.league__table .tit-row,
+.league__table .desc-row {
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+.league__table .tit-row .td:nth-child(1),
+.league__table .desc-row .td:nth-child(1) {
+  color: #000;
+  font-weight: 600;
+}
+.league__table .tit-row .th,
+.league__table .tit-row .td,
+.league__table .desc-row .th,
+.league__table .desc-row .td {
+  flex: 0 0 50px;
+  text-align: left;
+  font-size: 14px;
+  color: #9695a0;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+}
+.league__table .tit-row .team,
+.league__table .desc-row .team {
+  flex-basis: 200px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.league__table .tit-row .team .thumb,
+.league__table .desc-row .team .thumb {
+  width: 32px;
+  height: 32px;
+  padding-right: 8px;
+}
+.league__table .tit-row .team .thumb img,
+.league__table .desc-row .team .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.market__lank .content .co__wrap--flex {
+  display: flex;
+}
+.market__lank .content .co__wrap--flex .squad {
+  width: 575px;
+  border: 1px solid midnightblue;
+}
+.market__lank .content .co__wrap--flex .trade__market {
+  width: calc(50% - 575px);
+}
 
 .co__wrap {
   width: 100%;
@@ -798,6 +902,17 @@ button {
 .info {
   color: #bababa;
   font-size: 13px;
+}
+
+.market__lank .content .co__wrap--flex {
+  display: flex;
+}
+.market__lank .content .co__wrap--flex .squad {
+  width: 575px;
+  border: 1px solid midnightblue;
+}
+.market__lank .content .co__wrap--flex .trade__market {
+  width: calc(50% - 575px);
 }
 
 html,
