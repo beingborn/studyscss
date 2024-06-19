@@ -303,20 +303,29 @@ button {
   -webkit-box-orient: vertical;
 }
 
+.more-btn {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+.more-btn:after {
+  content: "";
+  display: inline-block;
+  background: url(/img/baseline-plus.svg) no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .info {
   color: #bababa;
   font-size: 13px;
-}
-
-.market__lank .content .co__wrap--flex {
-  display: flex;
-}
-.market__lank .content .co__wrap--flex .squad {
-  width: 575px;
-  border: 1px solid midnightblue;
-}
-.market__lank .content .co__wrap--flex .trade__market {
-  width: calc(50% - 575px);
 }
 
 .middle__bg {
@@ -387,25 +396,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.column__guide .column__header .column__title .more-btn {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  border: 1px solid lightgray;
-  border-radius: 4px;
-}
-.column__guide .column__header .column__title .more-btn:after {
-  content: "";
-  display: inline-block;
-  background: url(/img/baseline-plus.svg) no-repeat center;
-  background-size: contain;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .notice {
@@ -859,15 +849,29 @@ button {
      object-fit: contain;
 }
 
+.market__lank {
+  margin: 50px auto;
+}
+.market__lank .column__title {
+  border-bottom: 1px solid gray;
+}
 .market__lank .content .co__wrap--flex {
   display: flex;
 }
-.market__lank .content .co__wrap--flex .squad {
+.market__lank .content .co__wrap--flex .con {
+  padding-right: 50px;
+}
+.market__lank .content .co__wrap--flex .con .squad {
   width: 575px;
-  border: 1px solid midnightblue;
+}
+.market__lank .content .co__wrap--flex .con .squad .seanson__graph .graph__wrap {
+  margin: 0px auto;
 }
 .market__lank .content .co__wrap--flex .trade__market {
-  width: calc(50% - 575px);
+  width: calc((100% - 575px) / 2);
+}
+.market__lank .content .co__wrap--flex .user__lank {
+  width: calc((100% - 575px) / 2);
 }
 
 .co__wrap {
@@ -899,20 +903,29 @@ button {
   -webkit-box-orient: vertical;
 }
 
+.more-btn {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+.more-btn:after {
+  content: "";
+  display: inline-block;
+  background: url(/img/baseline-plus.svg) no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .info {
   color: #bababa;
   font-size: 13px;
-}
-
-.market__lank .content .co__wrap--flex {
-  display: flex;
-}
-.market__lank .content .co__wrap--flex .squad {
-  width: 575px;
-  border: 1px solid midnightblue;
-}
-.market__lank .content .co__wrap--flex .trade__market {
-  width: calc(50% - 575px);
 }
 
 html,

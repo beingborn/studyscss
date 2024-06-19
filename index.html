@@ -624,13 +624,31 @@
             <div class="content">
               <div class="co__wrap--flex">
                 <div class="squad">
-                  <h2 class="column__title">스쿼드</h2>
+                  <div class="con">
+                    <h2 class="column__title">
+                      스쿼드
+                      <span class="more-btn"></span>
+                    </h2>
+                    <div class="season__graph">
+                      <div class="graph__wrap">
+                        <canvas id="myChart" height="290" width="480"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular__lank"></div>
                 </div>
                 <div class="trade__market">
-                  <h2 class="column__title">이적시장</h2>
+                  <div class="con">
+                    <h2 class="column__title">
+                      이적시장
+                      <span class="more-btn"></span>
+                    </h2>
+                  </div>
                 </div>
                 <div class="user__lank">
-                  <h2 class="column__title">구단주 랭킹</h2>
+                  <div class="con">
+                    <h2 class="column__title">구단주 랭킹</h2>
+                  </div>
                 </div>
               </div>
             </div>
@@ -639,5 +657,144 @@
         </div>
       </div>
     </div>
+
+    <!-- chart.js us -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      const chartAreaBorder = {
+        id: "chartAreaBorder",
+
+        beforeDraw(chart, args, options) {
+          const {
+            ctx,
+            chartArea: { left, top, width, height },
+          } = chart;
+
+          ctx.save();
+          ctx.strokeStyle = options.borderColor;
+          ctx.lineWidth = options.borderWidth;
+          ctx.setLineDash(options.borderDash || []);
+          ctx.lineDashOffset = options.borderDashOffset;
+          ctx.strokeRect(left, top, width, height);
+          ctx.restore();
+        },
+      };
+
+      const xScaleImage = {
+        id: "xScaleImage",
+
+        afterDatasetsDraw(chart, args, plugins) {
+          const {
+            ctx,
+            data,
+            chartArea: { bottom },
+            scales: { x },
+          } = chart;
+
+          ctx.save();
+          data.datasets[0].images.forEach((image, index) => {
+            const label = new Image();
+            label.src = image;
+            const width = 30;
+            const height = 24;
+            ctx.drawImage(
+              label,
+              x.getPixelForValue(index) - width / 2,
+              x.top + 12,
+              width,
+              height
+            );
+          });
+        },
+      };
+
+      const ctx = document.getElementById("myChart");
+      new Chart(ctx, {
+        type: "bar",
+        plugins: [chartAreaBorder, xScaleImage],
+        data: {
+          labels: [
+            "Red",
+            "Blue",
+            "Yellow",
+            "Green",
+            "Purple",
+            "Orange",
+            "fc",
+            "ac",
+            "dv",
+            "cc",
+            "purble",
+            "publisher",
+            "front",
+          ],
+          datasets: [
+            {
+              label: "클래스 이용 비중",
+              data: [
+                4, 3.1, 3.1, 3, 3, 2.9, 2.2, 2.2, 2.2, 2.2, 2.2, 1.1, 1.0, 0,
+              ],
+              backgroundColor: "#00c7ff",
+              border: "none",
+              images: [
+                "/img/squad-chart-1.png",
+                "/img/squad-chart-2.png",
+                "/img/squad-chart-3.png",
+                "/img/squad-chart-4.png",
+                "/img/squad-chart-5.png",
+                "/img/squad-chart-6.png",
+                "/img/squad-chart-7.png",
+                "/img/squad-chart-8.png",
+                "/img/squad-chart-9.png",
+                "/img/squad-chart-10.png",
+                "/img/squad-chart-11.png",
+                "/img/squad-chart-12.png",
+                "/img/squad-chart-13.png",
+              ],
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            chartAreaBorder: {
+              borderColor: "transparent",
+            },
+          },
+          responsive: false,
+          scales: {
+            y: {
+              grid: {
+                display: false,
+              },
+              gridLines: {
+                drawBorder: false,
+              },
+
+              beginAtZero: true,
+              ticks: {
+                stepSize: 4,
+                fontSize: 16,
+              },
+            },
+            x: {
+              // barThickness: 5,
+              grid: {
+                display: false,
+              },
+              gridLines: {
+                drawBorder: false,
+              },
+              ticks: {
+                display: true,
+                callback: function (value, index, values) {
+                  return ""; // x축 텍스트 라벨을 숨기기
+                },
+              },
+            },
+          },
+        },
+      });
+    </script>
   </body>
 </html>
