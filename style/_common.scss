@@ -54,3 +54,46 @@ $main-color: #07c9a0;
   color: #bababa;
   font-size: 13px;
 }
+
+.rank__tab {
+  ul {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+
+    li {
+      width: calc(100% / 2);
+      text-align: center;
+
+      .active {
+        border-bottom: 3px solid $main-color;
+        color: #000;
+        font-weight: 600;
+      }
+
+      a {
+        display: block;
+        font-size: 14px;
+        color: #9695a0;
+        line-height: 70px;
+        border-bottom: 3px solid rgba(0, 0, 0, 0);
+        font-weight: 400;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          top: 19px;
+          right: 0;
+          width: 1px;
+          height: 30px;
+          background-color: #c9c9c9;
+          content: "";
+        }
+      }
+
+      .last__con::after {
+        display: none;
+      }
+    }
+  }
+}

@@ -328,6 +328,42 @@ button {
   font-size: 13px;
 }
 
+.rank__tab ul {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.rank__tab ul li {
+  width: 50%;
+  text-align: center;
+}
+.rank__tab ul li .active {
+  border-bottom: 3px solid #07c9a0;
+  color: #000;
+  font-weight: 600;
+}
+.rank__tab ul li a {
+  display: block;
+  font-size: 14px;
+  color: #9695a0;
+  line-height: 70px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  font-weight: 400;
+  position: relative;
+}
+.rank__tab ul li a::after {
+  position: absolute;
+  top: 19px;
+  right: 0;
+  width: 1px;
+  height: 30px;
+  background-color: #c9c9c9;
+  content: "";
+}
+.rank__tab ul li .last__con::after {
+  display: none;
+}
+
 .middle__bg {
   background-color: #eee;
 }
@@ -868,10 +904,148 @@ button {
   margin: 0px auto;
 }
 .market__lank .content .co__wrap--flex .trade__market {
-  width: calc((100% - 575px) / 2);
+  width: 50%;
 }
-.market__lank .content .co__wrap--flex .user__lank {
-  width: calc((100% - 575px) / 2);
+.market__lank .content .co__wrap--flex .trade__market .con {
+  padding: 0 50px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .column__title {
+  justify-content: flex-start;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .column__title .more-btn {
+  margin-left: auto;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .rank__tab ul {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .rank__tab ul li {
+  width: 50%;
+  text-align: center;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .rank__tab ul li .active {
+  border-bottom: 3px solid #07c9a0;
+  color: #000;
+  font-weight: 600;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .rank__tab ul li a {
+  display: block;
+  font-size: 14px;
+  color: #9695a0;
+  line-height: 70px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  font-weight: 400;
+  position: relative;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .rank__tab ul li a::after {
+  position: absolute;
+  top: 19px;
+  right: 0;
+  width: 1px;
+  height: 30px;
+  background-color: #c9c9c9;
+  content: "";
+}
+.market__lank .content .co__wrap--flex .trade__market .con .rank__tab ul li .last__con::after {
+  display: none;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__cards {
+  padding: 0;
+  padding-top: 26px;
+  padding-bottom: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__cards .player {
+  width: calc(33.33% - 20px);
+  height: 200px;
+  background-color: #04e45f;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__cards .player a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding: 0 8px;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(1) {
+  color: #000;
+  font-weight: 600;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(2) {
+  width: 35px;
+  height: 35px;
+  padding: 0 5px;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(3) {
+  margin-right: 4px;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(3),
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(4) {
+  flex: 0 0 24px;
+  padding: 0;
+  height: 17px;
+  position: relative;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(3) img,
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(4) img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-last-child(1) {
+  margin-left: auto;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-last-child(2) {
+  margin-left: 8px;
+  font-weight: 600;
+  color: #000;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td {
+  text-align: left;
+  font-size: 14px;
+  color: #9695a0;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  padding: 4px 0;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .column__sub {
+  margin-left: 20px;
+  font-weight: 400;
+}
+.market__lank .content .co__wrap--flex .user__rank {
+  width: 50%;
+}
+.market__lank .content .co__wrap--flex .user__rank .con {
+  padding-left: 50px;
+}
+.market__lank .content .co__wrap--flex .user__rank .con .owner__rank {
+  display: flex;
+  justify-content: space-between;
+}
+.market__lank .content .co__wrap--flex .user__rank .con .owner__rank .owner__info {
+  width: calc(50% - 20px);
+}
+.market__lank .content .co__wrap--flex .user__rank .con .owner__rank .owner__info .game__info {
+  height: 126px;
+  border-bottom: 1px dashed black;
 }
 
 .co__wrap {
@@ -926,6 +1100,42 @@ button {
 .info {
   color: #bababa;
   font-size: 13px;
+}
+
+.rank__tab ul {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.rank__tab ul li {
+  width: 50%;
+  text-align: center;
+}
+.rank__tab ul li .active {
+  border-bottom: 3px solid #07c9a0;
+  color: #000;
+  font-weight: 600;
+}
+.rank__tab ul li a {
+  display: block;
+  font-size: 14px;
+  color: #9695a0;
+  line-height: 70px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  font-weight: 400;
+  position: relative;
+}
+.rank__tab ul li a::after {
+  position: absolute;
+  top: 19px;
+  right: 0;
+  width: 1px;
+  height: 30px;
+  background-color: #c9c9c9;
+  content: "";
+}
+.rank__tab ul li .last__con::after {
+  display: none;
 }
 
 html,
