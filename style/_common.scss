@@ -97,3 +97,39 @@ $main-color: #07c9a0;
     }
   }
 }
+
+.td {
+  text-align: left;
+  font-size: 14px;
+  color: #9695a0;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  padding: 4px 0;
+}
+
+.level__bar {
+  width: 32px;
+  height: 12px;
+  display: inline-block;
+  background-color: lightblue;
+  position: relative;
+  font-size: 11px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 666;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    background-color: #04e45f;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 11px;
+    z-index: 998;
+  }
+}

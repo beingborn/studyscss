@@ -364,6 +364,41 @@ button {
   display: none;
 }
 
+.td {
+  text-align: left;
+  font-size: 14px;
+  color: #9695a0;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  padding: 4px 0;
+}
+
+.level__bar {
+  width: 32px;
+  height: 12px;
+  display: inline-block;
+  background-color: lightblue;
+  position: relative;
+  font-size: 11px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 666;
+}
+.level__bar::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  background-color: #04e45f;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 11px;
+  z-index: 998;
+}
+
 .middle__bg {
   background-color: #eee;
 }
@@ -903,6 +938,25 @@ button {
 .market__lank .content .co__wrap--flex .con .squad .seanson__graph .graph__wrap {
   margin: 0px auto;
 }
+.market__lank .content .co__wrap--flex .popular__lank {
+  clear: both;
+  margin-top: 20px;
+}
+.market__lank .content .co__wrap--flex .popular__lank .popular__player,
+.market__lank .content .co__wrap--flex .popular__lank .popular__team {
+  padding: 25px;
+  box-sizing: border-box;
+  height: 360px;
+  width: 50%;
+  float: left;
+  position: relative;
+  border: 1px solid green;
+  background-color: #c8c8c8;
+}
+.market__lank .content .co__wrap--flex .popular__lank .popular__player h2,
+.market__lank .content .co__wrap--flex .popular__lank .popular__team h2 {
+  text-align: center;
+}
 .market__lank .content .co__wrap--flex .trade__market {
   width: 50%;
 }
@@ -1130,7 +1184,81 @@ button {
 
 .user__table .desc-row {
   display: flex;
-  border: 1px solid red;
+  border-top: 1px solid gray;
+  align-items: center;
+}
+.user__table .desc-row .td:nth-child(1) {
+  color: #000;
+  font-weight: 600;
+}
+.user__table .desc-row .td:nth-child(2) {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.user__table .desc-row .td:last-child {
+  margin-left: auto;
+}
+.user__table .desc-row .level {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.user__table .desc-row .user__name {
+  padding-left: 8px;
+  color: #000;
+  font-weight: 500;
+}
+.user__table .desc-row .official,
+.user__table .desc-row .club {
+  flex: 0 0 20px;
+  vertical-align: top;
+}
+.user__table .desc-row .official img,
+.user__table .desc-row .club img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.user__guide {
+  border: 1px dashed blue;
+  background-color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+.user__guide .inner {
+  position: relative;
+}
+.user__guide ul {
+  overflow: hidden;
+  display: flex;
+  height: 203px;
+}
+.user__guide ul li:not(:last-child) {
+  border-right: 1px solid gray;
+}
+.user__guide ul li:nth-child(1) a span {
+  display: inline-block;
+  width: 149px;
+  height: 112px;
+  background: url(//ssl.nexon.com/s2/game/fc/online/obt/widemain/quickicon_update_240215.png) -59px -44px no-repeat;
+}
+.user__guide ul li {
+  width: 16.6666666667%;
+  position: relative;
+}
+.user__guide ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.user__guide ul li a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .co__wrap {
@@ -1221,6 +1349,41 @@ button {
 }
 .rank__tab ul li .last__con::after {
   display: none;
+}
+
+.td {
+  text-align: left;
+  font-size: 14px;
+  color: #9695a0;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  padding: 4px 0;
+}
+
+.level__bar {
+  width: 32px;
+  height: 12px;
+  display: inline-block;
+  background-color: lightblue;
+  position: relative;
+  font-size: 11px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 666;
+}
+.level__bar::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  background-color: #04e45f;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 11px;
+  z-index: 998;
 }
 
 html,
