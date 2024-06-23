@@ -958,7 +958,6 @@
 }
 
 .user__guide {
-  border: 1px dashed blue;
   background-color: #fff;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 
@@ -976,11 +975,34 @@
     }
 
     li:nth-child(1) a span {
-      display: inline-block;
+      background-position-x: -59px;
       width: 149px;
       height: 112px;
-      background: url(//ssl.nexon.com/s2/game/fc/online/obt/widemain/quickicon_update_240215.png) -59px -44px
-        no-repeat;
+    }
+    li:nth-child(2) a span {
+      background-position-x: -336px;
+      width: 122px;
+      height: 112px;
+    }
+    li:nth-child(3) a span {
+      background-position-x: -596px;
+      width: 115px;
+      height: 112px;
+    }
+    li:nth-child(4) a span {
+      width: 85px;
+      height: 112px;
+      background-position-x: -873px;
+    }
+    li:nth-child(5) a span {
+      width: 90px;
+      height: 112px;
+      background-position-x: -1133px;
+    }
+    li:nth-child(6) a span {
+      width: 118px;
+      height: 112px;
+      background-position-x: -1375px;
     }
 
     li {
@@ -993,12 +1015,99 @@
         height: 100%;
 
         span {
+          display: inline-block;
+
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          background: url(//ssl.nexon.com/s2/game/fc/online/obt/widemain/quickicon_update_240215.png)
+            no-repeat;
+          background-position-y: -44px;
         }
       }
     }
+  }
+}
+
+#footer {
+  overflow: hidden;
+  width: 100%;
+  min-width: 1280px;
+  color: #9a9a9a;
+  background-color: #000;
+
+  .inner {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+    padding-right: 240px;
+
+    .logo {
+      height: auto;
+      margin: 0px 0 32px 0px;
+    }
+
+    .footer__nav {
+      ul {
+        display: flex;
+
+        li:first-child {
+          padding-left: 0;
+        }
+
+        li {
+          position: relative;
+          padding: 0 8px;
+          &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: -1px;
+            top: 4px;
+            margin: 1px 0 0;
+            width: 1px;
+            height: 10px;
+            background-color: #666;
+          }
+
+          a {
+            font-size: 12px;
+            line-height: 12px;
+            color: #bcbcbc;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  address {
+    span {
+      font-size: 10px;
+      line-height: 14px;
+      letter-spacing: 0;
+    }
+  }
+
+  .nexon__copyright {
+    color: #9a9a9a;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0;
+    margin-bottom: 24px;
+  }
+
+  .copyright {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0;
+  }
+
+  .company__link {
+    margin-top: 32px;
   }
 }
