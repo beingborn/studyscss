@@ -124,20 +124,22 @@ button {
   width: 100%;
   border-top: 1px solid black;
 }
-.nav ul {
-  display: flex;
+.nav .header__ul {
+  width: 800px;
+  margin-left: 125px;
 }
-.nav li {
-  width: 138px;
+.nav .header__ul li {
+  display: inline-block;
+  width: 100px;
 }
-.nav li a {
-  font-size: 18px;
+.nav .header__ul li a {
+  font-size: 16px;
   color: #0b0b0c;
   display: inline-block;
   line-height: 100px;
   position: relative;
 }
-.nav li a::after {
+.nav .header__ul li a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -149,13 +151,13 @@ button {
   margin-left: -10px;
   transition: all 0.5s;
 }
-.nav li a:hover::after {
+.nav .header__ul li a:hover::after {
   height: 2px;
 }
-.nav li a .nav__text {
+.nav .header__ul .nav__text {
   position: relative;
 }
-.nav li a .--strong {
+.nav .header__ul .--strong {
   position: absolute;
   top: 0px;
   left: -6px;
@@ -164,6 +166,10 @@ button {
 .nav__logo {
   width: 65px;
   height: 44px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
 }
 .nav__logo img {
   width: 100%;
@@ -194,7 +200,6 @@ button {
   background-position: 0px -340px;
   width: 177px;
   height: 42px;
-  width: 177px;
 }
 
 .btn__start {
@@ -207,6 +212,41 @@ button {
   background-position: 0 0;
   overflow: hidden;
   z-index: 0;
+}
+
+.slide__menu {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.slide__menu .wrap {
+  margin-left: 125px;
+}
+.slide__menu ul {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 32px;
+}
+.slide__menu ul li {
+  float: left;
+  text-align: left;
+  padding-top: 30px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.slide__menu ul li a {
+  display: block;
+  font-size: 11px;
+  width: 100px;
+  line-height: 23px;
+  position: relative;
+}
+.slide__menu ul li a .--strong {
+  position: absolute;
+  top: 0px;
+  left: -6px;
 }
 
 .main {
@@ -421,6 +461,14 @@ button {
   top: 0;
   font-size: 11px;
   z-index: 998;
+}
+
+.height--active {
+  height: auto;
+}
+
+.height--disabled {
+  height: 0;
 }
 
 .middle__bg {
@@ -1253,7 +1301,7 @@ button {
 
 .user__guide {
   background-color: #fff;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 .user__guide .inner {
   position: relative;
@@ -1506,6 +1554,14 @@ button {
   top: 0;
   font-size: 11px;
   z-index: 998;
+}
+
+.height--active {
+  height: auto;
+}
+
+.height--disabled {
+  height: 0;
 }
 
 html,

@@ -13,8 +13,7 @@
 .middle__nav {
   width: 100%;
   position: relative;
-  background-color: #fff;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  @include boxShadow();
   height: 50px;
   line-height: 50px;
   border-radius: 3px;
@@ -962,8 +961,7 @@
 }
 
 .user__guide {
-  background-color: #fff;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  @include boxShadow();
 
   .inner {
     position: relative;

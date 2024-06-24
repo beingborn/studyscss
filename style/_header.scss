@@ -70,34 +70,38 @@
   height: 100px;
   width: 100%;
   border-top: 1px solid black;
-  ul {
-    display: flex;
-  }
-  li {
-    width: 138px;
-  }
-  li a {
-    font-size: 18px;
-    color: #0b0b0c;
-    display: inline-block;
-    line-height: 100px;
-    position: relative;
+  .header__ul {
+    // display: flex;
+    width: 800px;
+    margin-left: 125px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 0;
-      background: #04e45f;
-      padding-right: 20px;
-      margin-left: -10px;
-      transition: all 0.5s;
+    li {
+      display: inline-block;
+      width: 100px;
     }
+    li a {
+      font-size: 16px;
+      color: #0b0b0c;
+      display: inline-block;
+      line-height: 100px;
+      position: relative;
 
-    &:hover::after {
-      height: 2px;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: #04e45f;
+        padding-right: 20px;
+        margin-left: -10px;
+        transition: all 0.5s;
+      }
+
+      &:hover::after {
+        height: 2px;
+      }
     }
 
     .nav__text {
@@ -115,6 +119,10 @@
 .nav__logo {
   width: 65px;
   height: 44px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
 
   img {
     width: 100%;
@@ -146,7 +154,6 @@
     background-position: 0px -340px;
     width: 177px;
     height: 42px;
-    width: 177px;
   }
 }
 
@@ -161,4 +168,45 @@
   background-position: 0 0;
   overflow: hidden;
   z-index: 0;
+}
+
+.slide__menu {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+
+  .wrap {
+    margin-left: 125px;
+  }
+
+  ul {
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 32px;
+
+    li {
+      float: left;
+      text-align: left;
+      padding-top: 30px;
+      height: 100%;
+      box-sizing: border-box;
+      // margin-left: 4px;
+
+      a {
+        display: block;
+        font-size: 11px;
+        width: 100px;
+        line-height: 23px;
+        position: relative;
+
+        .--strong {
+          position: absolute;
+          top: 0px;
+          left: -6px;
+        }
+      }
+    }
+  }
 }

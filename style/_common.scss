@@ -133,3 +133,16 @@ $main-color: #07c9a0;
     z-index: 998;
   }
 }
+
+.height--active {
+  height: auto;
+}
+
+.height--disabled {
+  height: 0;
+}
+
+@mixin boxShadow() {
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
