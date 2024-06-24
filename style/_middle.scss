@@ -1,7 +1,7 @@
 @import "common.scss";
 
 .middle__bg {
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .middle__guide {
@@ -193,7 +193,7 @@
     .search__form {
       // 패딩값 위 아래로 12px, 좌우로는 12px씩 할당
       width: 100%;
-      height: calc(100% - 24px);
+      height: 100%;
       display: flex;
       justify-content: space-between;
       margin: 0 12px;
@@ -203,12 +203,15 @@
       select {
         border: 0;
         height: 100%;
+        background-color: transparent;
+        outline: none;
       }
 
       .search--submit {
         position: relative;
         width: 32px;
         height: 32px;
+        margin-top: 14px;
         background: none;
         color: transparent;
         cursor: pointer;
@@ -296,6 +299,7 @@
   .multi__wrap {
     background-color: #fff;
     height: 230px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 
     header {
       padding: 0 24px;
