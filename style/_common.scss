@@ -146,3 +146,8 @@ $main-color: #07c9a0;
   background-color: #fff;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
+
+@mixin flexSame() {
+  display: flex;
+  justify-content: space-between;
+}

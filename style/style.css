@@ -745,6 +745,9 @@ button {
   width: 120px;
   height: 180px;
 }
+.co__wrap2 .multi__wrap .content__wrap ul li:last-child a {
+  border-bottom: 0;
+}
 .co__wrap2 .multi__wrap .content__wrap ul li {
   height: 45px;
   line-height: 45px;
@@ -771,6 +774,24 @@ button {
   width: 100%;
   height: 100%;
 }
+.co__wrap2 .multi__wrap .content__wrap .content__slide .content__overflow ul li:nth-child(1) a {
+  background: url("/img//mqdefault-1.jpg") no-repeat center;
+}
+.co__wrap2 .multi__wrap .content__wrap .content__slide .content__overflow ul li:nth-child(2) a {
+  background: url("/img//mqdefault-2.jpg") no-repeat center;
+}
+.co__wrap2 .multi__wrap .content__wrap .content__slide .content__overflow ul li:nth-child(3) a {
+  background: url("/img//mqdefault-3.jpg") no-repeat center;
+}
+.co__wrap2 .multi__wrap .content__wrap .content__slide .content__overflow ul li:nth-child(4) a {
+  background: url("/img//mqdefault-4.jpg") no-repeat center;
+}
+.co__wrap2 .multi__wrap .content__wrap .content__slide .content__overflow ul li:nth-child(5) a {
+  background: url("/img//mqdefault-5.jpg") no-repeat center;
+}
+.co__wrap2 .multi__wrap .content__wrap .content__slide .content__overflow ul li:nth-child(6) a {
+  background: url("/img//mqdefault-6.jpg") no-repeat center;
+}
 .co__wrap2 .multi__wrap .content__wrap .content__slide .content__overflow ul li {
   display: inline-block;
   margin-right: 12px;
@@ -783,7 +804,6 @@ button {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(/img//mqdefault.jpg) no-repeat center;
 }
 
 .live__content {
@@ -873,14 +893,35 @@ button {
   padding-top: 14px;
 }
 .live__content .live__news .content .right__article .list__item {
+  cursor: pointer;
   display: flex;
   padding-bottom: 14px;
   border-bottom: 1px solid lightgray;
+}
+.live__content .live__news .content .right__article .list__item:hover .title span {
+  color: #04e45f;
+}
+.live__content .live__news .content .right__article .list__item:hover .img__box::after {
+  display: block;
 }
 .live__content .live__news .content .right__article .list__item .img__box {
   overflow: hidden;
   width: 120px;
   height: 68px;
+  position: relative;
+  z-index: 5;
+}
+.live__content .live__news .content .right__article .list__item .img__box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #04e45f;
+  opacity: 0.5;
+  z-index: 6;
+  display: none;
 }
 .live__content .live__news .content .right__article .list__item .img__box img {
   width: 100%;

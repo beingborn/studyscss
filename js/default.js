@@ -1,4 +1,5 @@
 let gnb = $(".slide__menu .wrap");
+let gnbArea = $(".nav__wrap");
 
 $(document).ready(function () {
   gnb.addClass("height--disabled");
@@ -8,14 +9,19 @@ $("a").click(function (e) {
   e.preventDefault();
 });
 
-$(".header__ul li").hover(
-  function () {
-    gnb.toggleClass("height--disabled height--active");
-  },
-  function () {
-    gnb.toggleClass("height--active height--disabled");
-  }
-);
+$(".header__ul li").mouseover(function () {
+  gnb.removeClass("height--disabled");
+  gnb.addClass("height--active");
+});
+
+gnb.addClass("height--disabled");
+gnb.removeClass("height--active");
+
+// gnb 닫기는 mouseleave를 이용해 부모 태그를 기준으로 실행합니다.
+$(".nav__wrap").mouseleave(function () {
+  gnb.addClass("height--disabled");
+  gnb.removeClass("height--active");
+});
 
 let tradeTab = $(".trade__market .rank__tab li a");
 let userLankTab = $(".user__rank .rank__tab li a");
