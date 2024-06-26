@@ -1,0 +1,277 @@
+.player__slide {
+}
+
+.player__wrap {
+  display: inline-block;
+  width: 106px;
+  height: 170px;
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.player__wrap::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: -8px;
+  width: 42px;
+  height: 42px;
+  z-index: 10;
+  background: url(./img/sp_num.png) 0 0 no-repeat;
+  line-height: 36px;
+  text-align: center;
+  text-indent: -4px;
+  font-weight: bold;
+}
+
+.player__wrap span {
+  display: inline-block;
+}
+
+.player__wrap .info {
+  position: relative;
+  z-index: 2;
+  width: 106px;
+  height: 170px;
+}
+.player__wrap .info .position {
+  font-weight: 300;
+  font-size: 16px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  text-align: center;
+  width: 35px;
+  text-shadow: 0 0 2px #000;
+  color: #fff;
+  /* font-family: "INGAME"; */
+}
+
+.player__wrap .info .ovr {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  text-align: center;
+  width: 34px;
+  text-shadow: 0 0 2px #000;
+}
+.player__wrap .info .nation {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  text-align: center;
+  width: 35px;
+}
+
+.player__wrap .info .nation img {
+  width: 16px;
+}
+
+.player__wrap .info .season {
+  position: absolute;
+  top: 96px;
+  left: 5px;
+  text-align: center;
+  width: 26px;
+  height: 26px;
+  z-index: 2;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.player__wrap .info .season img {
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.player__wrap .info .thumb {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 29px;
+  margin-left: -36px;
+  width: 86px;
+  height: 98px;
+  overflow: hidden;
+}
+
+.player__wrap .info .thumb img {
+  width: 98px;
+}
+
+.player__wrap .info .buildup {
+  line-height: 14px;
+  font-weight: 500;
+  position: absolute;
+  top: 110px;
+  right: 3px;
+  width: 24px;
+  text-align: center;
+  height: 14px;
+  font-size: 11px;
+  letter-spacing: 0;
+  z-index: 2;
+}
+
+.player__wrap .info .buildup__1 {
+  color: #c5c8c9 !important;
+  background: #51545a !important;
+  background: linear-gradient(
+    140deg,
+    #51545a 0%,
+    #51545a 0%,
+    #42464d 100%
+  ) !important;
+  border: 1.5px solid #393a3c !important;
+  border-top-color: #62676d !important;
+  border-left-color: #62676d !important;
+  border-right-color: #393a3c !important;
+}
+
+.player__wrap .info .name__wrap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.player__wrap .info .name__wrap .icon {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.player__wrap .info .name__wrap .icon img {
+  width: 13px;
+}
+
+.player__wrap .info .name__wrap .name {
+  width: auto;
+  max-width: 80px;
+  overflow: hidden;
+  height: auto;
+  line-height: 1.2;
+  display: inline-block;
+}
+
+.player__wrap .info .name__wrap .name span {
+  font-size: 10px;
+  color: #000;
+  font-weight: 500;
+  /* vertical-align: top; */
+  display: inline-block;
+  height: auto;
+  line-height: 1.2;
+  white-space: nowrap;
+  letter-spacing: 0;
+}
+
+.player__wrap .info .pay {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 30px;
+  height: 18px;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 8.66px 0;
+  border-left: solid 2px #a7a9ae;
+  border-right: solid 2px #a7a9ae;
+  transform: scale(0.5) translateX(-33px);
+  font-size: 20px;
+  color: #3f434a;
+  text-align: center;
+  font-weight: bold;
+  font-family: "EASANS";
+  line-height: 21.5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.player__wrap .info .pay::before {
+  top: -11px;
+  border-top: solid 2.8px #a7a9ae;
+  border-right: solid 2.8px #a7a9ae;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 21px;
+  height: 21px;
+  -webkit-transform: scaleY(0.6) rotate(-45deg);
+  -ms-transform: scaleY(0.6) rotate(-45deg);
+  transform: scaleY(0.6) rotate(-45deg);
+  background-color: inherit;
+  left: 2.5px;
+  z-index: 1;
+}
+
+.player__wrap .info .pay::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 21px;
+  height: 21px;
+  -webkit-transform: scaleY(0.6) rotate(-45deg);
+  -ms-transform: scaleY(0.6) rotate(-45deg);
+  transform: scaleY(0.6) rotate(-45deg);
+  background-color: inherit;
+  left: 2.5px;
+  z-index: 1;
+  bottom: -11px;
+  border-bottom: solid 2.8px #a7a9ae;
+  border-left: solid 2.8px #a7a9ae;
+}
+
+.player__wrap .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.player__wrap .back img {
+  width: 106px;
+}
+
+.player__wrap .price__wrap {
+  display: block;
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  width: 120px;
+  height: 30px;
+  margin-left: -60px;
+  background: url(/img/price_wrap.png) 0 0 no-repeat;
+  box-sizing: border-box;
+  padding-top: 12px;
+  z-index: 6;
+  text-align: center;
+  /* background-color: black; */
+}
+
+.player__wrap .price__wrap .price {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 200;
+  display: inline-block;
+  width: 105px;
+  overflow: hidden;
+  height: 18px;
+  line-height: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: 0;
+}
