@@ -1,4 +1,19 @@
-.player__slide {
+.player__wrap {
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: -8px;
+    width: 42px;
+    height: 42px;
+    z-index: 10;
+    background: url(/img/sp_num.png) 0 0 no-repeat;
+    line-height: 36px;
+    text-align: center;
+    text-indent: -4px;
+    font-weight: bold;
+  }
 }
 
 .player__wrap {
@@ -8,23 +23,8 @@
   position: relative;
   z-index: 1;
   left: 50%;
+  margin-top: 20px;
   transform: translateX(-50%);
-}
-
-.player__wrap::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 0px;
-  right: -8px;
-  width: 42px;
-  height: 42px;
-  z-index: 10;
-  background: url(./img/sp_num.png) 0 0 no-repeat;
-  line-height: 36px;
-  text-align: center;
-  text-indent: -4px;
-  font-weight: bold;
 }
 
 .player__wrap span {

@@ -678,15 +678,69 @@
         .popular__team {
           padding: 25px;
           box-sizing: border-box;
-          height: 360px;
+          height: 406px;
           width: 50%;
           float: left;
           position: relative;
-          border: 1px solid green;
-          background-color: #c8c8c8;
+          background-color: #f9f9fb;
 
           h2 {
             text-align: center;
+            font-size: 16px;
+            color: #889;
+          }
+
+          .popular__tab {
+            margin-top: 13px;
+            border: 1px solid lightgray;
+
+            ul {
+              display: flex;
+
+              li {
+                width: 50%;
+                background-color: #fff;
+                height: 28px;
+                text-align: center;
+
+                .active {
+                  color: #fff;
+                  background-color: #00c7ff;
+                  border-color: #00c7ff;
+                }
+
+                a {
+                  display: block;
+                  width: 100%;
+                  line-height: 28px;
+                  font-weight: 500;
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+
+          .popular__position {
+            text-align: center;
+
+            .selector {
+              margin-top: 16px;
+              width: 70px;
+              height: 23px;
+              background: url(//ssl.nexon.com/s2/game/fc/online/obt/widemain/select_category.png) -1px
+                0 no-repeat;
+              background-position: center;
+              position: relative;
+              box-sizing: border-box;
+
+              span {
+                position: absolute;
+                left: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                line-height: 23px;
+              }
+            }
           }
         }
       }
