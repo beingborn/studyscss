@@ -1080,8 +1080,8 @@ button {
   position: relative;
   background-color: #f9f9fb;
 }
-.market__lank .content .co__wrap--flex .popular__lank .popular__player h2,
-.market__lank .content .co__wrap--flex .popular__lank .popular__team h2 {
+.market__lank .content .co__wrap--flex .popular__lank .popular__player .popular__tit,
+.market__lank .content .co__wrap--flex .popular__lank .popular__team .popular__tit {
   text-align: center;
   font-size: 16px;
   color: #889;
@@ -1102,8 +1102,8 @@ button {
   height: 28px;
   text-align: center;
 }
-.market__lank .content .co__wrap--flex .popular__lank .popular__player .popular__tab ul li .active,
-.market__lank .content .co__wrap--flex .popular__lank .popular__team .popular__tab ul li .active {
+.market__lank .content .co__wrap--flex .popular__lank .popular__player .popular__tab ul li .po-active,
+.market__lank .content .co__wrap--flex .popular__lank .popular__team .popular__tab ul li .po-active {
   color: #fff;
   background-color: #00c7ff;
   border-color: #00c7ff;
@@ -1196,9 +1196,7 @@ button {
   justify-content: space-between;
 }
 .market__lank .content .co__wrap--flex .trade__market .con .player__cards .player {
-  width: calc(33.33% - 20px);
   height: 200px;
-  background-color: #04e45f;
 }
 .market__lank .content .co__wrap--flex .trade__market .con .player__cards .player a {
   display: block;
@@ -1669,6 +1667,16 @@ button {
   height: 0;
 }
 
+.player__wrap {
+  display: inline-block;
+  width: 106px;
+  height: 170px;
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  margin-top: 20px;
+  transform: translateX(-50%);
+}
 .player__wrap::after {
   content: "";
   display: inline-block;
@@ -1684,18 +1692,6 @@ button {
   text-indent: -4px;
   font-weight: bold;
 }
-
-.player__wrap {
-  display: inline-block;
-  width: 106px;
-  height: 170px;
-  position: relative;
-  z-index: 1;
-  left: 50%;
-  margin-top: 20px;
-  transform: translateX(-50%);
-}
-
 .player__wrap span {
   display: inline-block;
 }
@@ -1706,7 +1702,6 @@ button {
   width: 106px;
   height: 170px;
 }
-
 .player__wrap .info .position {
   font-weight: 300;
   font-size: 16px;
@@ -1717,9 +1712,7 @@ button {
   width: 35px;
   text-shadow: 0 0 2px #000;
   color: #fff;
-  /* font-family: "INGAME"; */
 }
-
 .player__wrap .info .ovr {
   color: #fff;
   font-weight: 400;
@@ -1731,7 +1724,6 @@ button {
   width: 34px;
   text-shadow: 0 0 2px #000;
 }
-
 .player__wrap .info .nation {
   position: absolute;
   top: 66px;
@@ -1739,11 +1731,9 @@ button {
   text-align: center;
   width: 35px;
 }
-
 .player__wrap .info .nation img {
   width: 16px;
 }
-
 .player__wrap .info .season {
   position: absolute;
   top: 96px;
@@ -1756,7 +1746,6 @@ button {
   overflow: hidden;
   background: #fff;
 }
-
 .player__wrap .info .season img {
   width: 15px;
   position: absolute;
@@ -1764,7 +1753,6 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .player__wrap .info .thumb {
   display: block;
   position: absolute;
@@ -1775,11 +1763,9 @@ button {
   height: 98px;
   overflow: hidden;
 }
-
 .player__wrap .info .thumb img {
   width: 98px;
 }
-
 .player__wrap .info .buildup {
   line-height: 14px;
   font-weight: 500;
@@ -1802,6 +1788,16 @@ button {
   border-top-color: #62676d !important;
   border-left-color: #62676d !important;
   border-right-color: #393a3c !important;
+}
+
+.player__wrap .info .buildup__8 {
+  color: #695100 !important;
+  background: #f9dd62 !important;
+  background: linear-gradient(140deg, #f9dd62 0%, #f9dd62 0%, #dca908 100%) !important;
+  border: 1.5px solid #cda000 !important;
+  border-top-color: #e9d36c !important;
+  border-left-color: #e9d36c !important;
+  border-right-color: #cda000 !important;
 }
 
 .player__wrap .info .name__wrap {
@@ -1937,6 +1933,75 @@ button {
   white-space: nowrap;
   text-overflow: ellipsis;
   letter-spacing: 0;
+}
+
+.pagination {
+  width: 100%;
+  margin-top: 40px;
+}
+.pagination .pagination--align {
+  text-align: center;
+}
+.pagination .pagination--align span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+.pagination .pagination--align .active {
+  background-color: #25c7f5;
+}
+
+.level {
+  width: 170px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+}
+.level .lv_content .thumb {
+  position: relative;
+  text-align: center;
+  height: 177px;
+  width: 100%;
+  background: url(//ssl.nexon.com/s2/game/fc/online/obt/widemain/bg_u.png) center center no-repeat;
+}
+.level .lv_content .thumb img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-36%) translateX(-50%);
+  max-width: 75px !important;
+}
+.level .team__info {
+  text-align: center;
+  margin-top: 12px;
+}
+.level .team__info .team__tit {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #131313;
+  position: relative;
+  font-weight: 600;
+}
+.level .team__info .team__per {
+  margin-top: 7px;
+  font-size: 14px;
+  color: #858498;
+}
+
+.team__wrap .pagination {
+  margin-top: 14px;
+}
+
+.player__slide .player__wrap-2st::after {
+  background: url(//ssl.nexon.com/s2/game/fc/online/obt/datacenter/rank/sp_num.png) -134px 0 no-repeat;
+}
+
+.player__slide .player__wrap-3st::after {
+  background: url(//ssl.nexon.com/s2/game/fc/online/obt/datacenter/rank/sp_num.png) -270px 0 no-repeat;
 }
 
 html,

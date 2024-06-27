@@ -1,4 +1,13 @@
 .player__wrap {
+  display: inline-block;
+  width: 106px;
+  height: 170px;
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  margin-top: 20px;
+  transform: translateX(-50%);
+
   &::after {
     content: "";
     display: inline-block;
@@ -14,113 +23,104 @@
     text-indent: -4px;
     font-weight: bold;
   }
+
+  span {
+    display: inline-block;
+  }
 }
 
 .player__wrap {
-  display: inline-block;
-  width: 106px;
-  height: 170px;
-  position: relative;
-  z-index: 1;
-  left: 50%;
-  margin-top: 20px;
-  transform: translateX(-50%);
-}
+  .info {
+    position: relative;
+    z-index: 2;
+    width: 106px;
+    height: 170px;
 
-.player__wrap span {
-  display: inline-block;
-}
+    .position {
+      font-weight: 300;
+      font-size: 16px;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      text-align: center;
+      width: 35px;
+      text-shadow: 0 0 2px #000;
+      color: #fff;
+    }
 
-.player__wrap .info {
-  position: relative;
-  z-index: 2;
-  width: 106px;
-  height: 170px;
-}
-.player__wrap .info .position {
-  font-weight: 300;
-  font-size: 16px;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  text-align: center;
-  width: 35px;
-  text-shadow: 0 0 2px #000;
-  color: #fff;
-  /* font-family: "INGAME"; */
-}
+    .ovr {
+      color: #fff;
+      font-weight: 400;
+      font-size: 16px;
+      position: absolute;
+      top: 32px;
+      left: 0;
+      text-align: center;
+      width: 34px;
+      text-shadow: 0 0 2px #000;
+    }
 
-.player__wrap .info .ovr {
-  color: #fff;
-  font-weight: 400;
-  font-size: 16px;
-  position: absolute;
-  top: 32px;
-  left: 0;
-  text-align: center;
-  width: 34px;
-  text-shadow: 0 0 2px #000;
-}
-.player__wrap .info .nation {
-  position: absolute;
-  top: 66px;
-  left: 0;
-  text-align: center;
-  width: 35px;
-}
+    .nation {
+      position: absolute;
+      top: 66px;
+      left: 0;
+      text-align: center;
+      width: 35px;
 
-.player__wrap .info .nation img {
-  width: 16px;
-}
+      img {
+        width: 16px;
+      }
+    }
 
-.player__wrap .info .season {
-  position: absolute;
-  top: 96px;
-  left: 5px;
-  text-align: center;
-  width: 26px;
-  height: 26px;
-  z-index: 2;
-  border-radius: 20px;
-  overflow: hidden;
-  background: #fff;
-}
+    .season {
+      position: absolute;
+      top: 96px;
+      left: 5px;
+      text-align: center;
+      width: 26px;
+      height: 26px;
+      z-index: 2;
+      border-radius: 20px;
+      overflow: hidden;
+      background: #fff;
 
-.player__wrap .info .season img {
-  width: 15px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+      img {
+        width: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
 
-.player__wrap .info .thumb {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 29px;
-  margin-left: -36px;
-  width: 86px;
-  height: 98px;
-  overflow: hidden;
-}
+    .thumb {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 29px;
+      margin-left: -36px;
+      width: 86px;
+      height: 98px;
+      overflow: hidden;
+      img {
+        width: 98px;
+      }
+    }
 
-.player__wrap .info .thumb img {
-  width: 98px;
-}
-
-.player__wrap .info .buildup {
-  line-height: 14px;
-  font-weight: 500;
-  position: absolute;
-  top: 110px;
-  right: 3px;
-  width: 24px;
-  text-align: center;
-  height: 14px;
-  font-size: 11px;
-  letter-spacing: 0;
-  z-index: 2;
+    .buildup {
+      line-height: 14px;
+      font-weight: 500;
+      position: absolute;
+      top: 110px;
+      right: 3px;
+      width: 24px;
+      text-align: center;
+      height: 14px;
+      font-size: 11px;
+      letter-spacing: 0;
+      z-index: 2;
+    }
+  }
 }
 
 .player__wrap .info .buildup__1 {
@@ -136,6 +136,21 @@
   border-top-color: #62676d !important;
   border-left-color: #62676d !important;
   border-right-color: #393a3c !important;
+}
+
+.player__wrap .info .buildup__8 {
+  color: #695100 !important;
+  background: #f9dd62 !important;
+  background: linear-gradient(
+    140deg,
+    #f9dd62 0%,
+    #f9dd62 0%,
+    #dca908 100%
+  ) !important;
+  border: 1.5px solid #cda000 !important;
+  border-top-color: #e9d36c !important;
+  border-left-color: #e9d36c !important;
+  border-right-color: #cda000 !important;
 }
 
 .player__wrap .info .name__wrap {
@@ -274,4 +289,86 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   letter-spacing: 0;
+}
+
+.pagination {
+  width: 100%;
+  margin-top: 40px;
+
+  .pagination--align {
+    text-align: center;
+
+    span {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border-radius: 10px;
+      background-color: lightgray;
+    }
+
+    .active {
+      background-color: #25c7f5;
+    }
+  }
+}
+
+.level {
+  width: 170px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+
+  .lv_content {
+    .thumb {
+      position: relative;
+      text-align: center;
+      height: 177px;
+      width: 100%;
+      background: url(//ssl.nexon.com/s2/game/fc/online/obt/widemain/bg_u.png)
+        center center no-repeat;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-36%) translateX(-50%);
+        max-width: 75px !important;
+      }
+    }
+  }
+
+  .team__info {
+    text-align: center;
+    margin-top: 12px;
+
+    .team__tit {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #131313;
+      position: relative;
+      font-weight: 600;
+    }
+
+    .team__per {
+      margin-top: 7px;
+      font-size: 14px;
+      color: #858498;
+    }
+  }
+}
+
+.team__wrap .pagination {
+  margin-top: 14px;
+}
+
+.player__slide .player__wrap-2st::after {
+  background: url(//ssl.nexon.com/s2/game/fc/online/obt/datacenter/rank/sp_num.png) -134px
+    0 no-repeat;
+}
+
+.player__slide .player__wrap-3st::after {
+  background: url(//ssl.nexon.com/s2/game/fc/online/obt/datacenter/rank/sp_num.png) -270px
+    0 no-repeat;
 }

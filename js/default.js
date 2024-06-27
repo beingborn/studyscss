@@ -26,6 +26,8 @@ $(".nav__wrap").mouseleave(function () {
 let tradeTab = $(".trade__market .rank__tab li a");
 let userLankTab = $(".user__rank .rank__tab li a");
 let leagueTab = $(".league__rank .rank__tab li a");
+let popularPlayerTab = $(".popular__player .popular__tab ul li a");
+let popularTeamTab = $(".popular__team .popular__tab ul li a");
 
 leagueTab.on("click", function () {
   $(this).addClass("active");
@@ -40,4 +42,14 @@ tradeTab.on("click", function () {
 userLankTab.on("click", function () {
   $(this).addClass("active");
   userLankTab.not($(this)).removeClass("active");
+});
+
+popularPlayerTab.on("click", function () {
+  $(this).addClass("po-active");
+  popularPlayerTab.not($(this)).removeClass("po-active");
+});
+
+popularTeamTab.on("click", function () {
+  $(this).addClass("po-active");
+  popularTeamTab.not($(this)).removeClass("po-active");
 });

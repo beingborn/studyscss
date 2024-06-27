@@ -711,11 +711,11 @@
                   </div>
                   <div class="popular__lank">
                     <div class="popular__player">
-                      <h2>인기 선수 탑 3</h2>
+                      <h2 class="popular__tit">인기 선수 탑 3</h2>
                       <div class="popular__tab">
                         <ul>
                           <li>
-                            <a href="#" class="active">포지션</a>
+                            <a href="#" class="po-active">포지션</a>
                           </li>
                           <li>
                             <a href="#">급여</a>
@@ -815,19 +815,52 @@
                           </div>
                         </div>
                       </div>
+                      <div class="pagination">
+                        <div class="pagination--align">
+                          <span class="active"></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </div>
                     </div>
                     <div class="popular__team">
-                      <h2>인기 팀컬러 탑 3</h2>
+                      <h2 class="popular__tit">인기 팀컬러 탑 3</h2>
                       <div class="popular__tab">
                         <ul>
                           <li>
-                            <a href="#" class="active">클럽</a>
+                            <a href="#" class="po-active">클럽</a>
                           </li>
                           <li>
                             <a href="#">국가</a>
                           </li>
                         </ul>
                       </div>
+                      <div class="level lv4">
+                        <div class="lv_content">
+                          <div class="thumb">
+                            <img
+                              src="https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/crests/light/medium/l243.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="team__wrap">
+                          <div class="team__info">
+                            <h2 class="team__tit">레알마드리드</h2>
+                            <p class="team__per">413명 (13.4%)</p>
+                          </div>
+                          <div class="pagination">
+                            <div class="pagination--align">
+                              <span class="active"></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- mark -->
                     </div>
                   </div>
                 </div>
@@ -849,13 +882,198 @@
                     <!-- 선수 랭킹 카드 -->
                     <div class="player__cards">
                       <div class="player 1st">
-                        <a href="#">a</a>
+                        <a href="#">
+                          <div class="player__list">
+                            <div class="player__slide">
+                              <div
+                                class="player__wrap"
+                                title="크리스티아누 호날두"
+                                data-html="true"
+                              >
+                                <div class="info">
+                                  <span class="back">
+                                    <img
+                                      src="https://ssl.nexon.com/s2/game/fc/online/obt/externalAssets/card/UT.png"
+                                      alt=""
+                                    />
+                                  </span>
+                                  <span class="position HG">ST</span>
+                                  <span class="ovr">128</span>
+                                  <span class="nation">
+                                    <img
+                                      src="https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/countries/smallflags/45.png"
+                                      alt=""
+                                    />
+                                  </span>
+                                  <span class="season">
+                                    <img
+                                      src="https://ssl.nexon.com/s2/game/fc/online/obt/externalAssets/season/HG_big.png"
+                                      alt=""
+                                    />
+                                  </span>
+                                  <span class="thumb">
+                                    <img
+                                      src="https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersActionHigh/p814020801.png?rd=202406270430"
+                                      alt=""
+                                      onerror="this.src='https://ssl.nexon.com/s2/game/fc/mobile/squadMaker/default/d_player.png'"
+                                    />
+                                    <span class="teamcolor"></span>
+                                  </span>
+                                  <span class="buildup buildup__8">1</span>
+                                  <span class="name__wrap">
+                                    <span class="icon"
+                                      ><img
+                                        src="https://ssl.nexon.com/s2/game/fc/online/obt/externalAssets/season/HG.png"
+                                    /></span>
+                                    <span class="name"
+                                      ><span>크리스티아누 호날두</span></span
+                                    >
+                                  </span>
+                                  <span class="pay">29</span>
+                                </div>
+                                <div class="price__wrap">
+                                  <span
+                                    class="price span_bp0"
+                                    style="display: none"
+                                    >-</span
+                                  >
+                                  <span class="price"
+                                    >138,000,000,000,000 BP</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
                       </div>
                       <div class="player 2st">
-                        <a href="#">b</a>
+                        <a href="#">
+                          <div class="player__list">
+                            <div class="player__slide">
+                              <div
+                                class="player__wrap player__wrap-2st"
+                                title="킬리안 음바페"
+                                data-html="true"
+                              >
+                                <div class="info">
+                                  <span class="back"
+                                    ><img
+                                      src="https://ssl.nexon.com/s2/game/fc/online/obt/externalAssets/card/EU24.png"
+                                      alt="LW"
+                                  /></span>
+                                  <span class="position HG">LW</span>
+                                  <span class="ovr">127</span>
+                                  <span class="nation">
+                                    <img
+                                      src="https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/countries/smallflags/45.png"
+                                      alt=""
+                                    />
+                                  </span>
+                                  <span class="season">
+                                    <img
+                                      src="https://ssl.nexon.com/s2/game/fc/online/obt/externalAssets/season/HG_big.png"
+                                      alt=""
+                                    />
+                                  </span>
+                                  <span class="thumb">
+                                    <img
+                                      src="https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p815231747.png?rd=202406270410"
+                                      onerror="this.src='https://ssl.nexon.com/s2/game/fc/mobile/squadMaker/default/d_player.png'"
+                                      alt=""
+                                    />
+                                    <span class="teamcolor"></span>
+                                  </span>
+                                  <span class="buildup buildup__8">1</span>
+                                  <span class="name__wrap">
+                                    <span class="icon"
+                                      ><img
+                                        src="https://ssl.nexon.com/s2/game/fc/online/obt/externalAssets/season/HG.png"
+                                    /></span>
+                                    <span class="name"
+                                      ><span>킬리안 음바페</span></span
+                                    >
+                                  </span>
+                                  <span class="pay">28</span>
+                                </div>
+                                <div class="price__wrap">
+                                  <span
+                                    class="price span_bp0"
+                                    style="display: none"
+                                    >-</span
+                                  >
+                                  <span class="price"
+                                    >83,100,000,000,000 BP</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
                       </div>
                       <div class="player 3rd">
-                        <a href="#">c</a>
+                        <a href="#">
+                          <div class="player__list">
+                            <div class="player__slide">
+                              <div
+                                class="player__wrap player__wrap-3st"
+                                title="비니시우스 주니어"
+                                data-html="true"
+                              >
+                                <div class="info">
+                                  <span class="back">
+                                    <img
+                                      src="https://ssl.nexon.com/s2/game/fc/online/obt/externalAssets/card/23UCL.png"
+                                      alt="CF"
+                                    />
+                                  </span>
+                                  <span class="position HG">CF</span>
+                                  <span class="ovr">131</span>
+                                  <span class="nation">
+                                    <img
+                                      src="https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/countries/smallflags/54.png"
+                                      alt=""
+                                    />
+                                  </span>
+                                  <span class="season">
+                                    <img
+                                      src="https://ssl.nexon.com/s2/game/fc/online/obt/externalAssets/season/23UCL_big.png"
+                                      alt=""
+                                    />
+                                  </span>
+                                  <span class="thumb">
+                                    <img
+                                      src="https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p810238794.png?rd=202406270410"
+                                      onerror="this.src='https://ssl.nexon.com/s2/game/fc/mobile/squadMaker/default/d_player.png'"
+                                      alt=""
+                                    />
+                                    <span class="teamcolor"></span>
+                                  </span>
+                                  <span class="buildup buildup__8">1</span>
+                                  <span class="name__wrap">
+                                    <span class="icon"
+                                      ><img
+                                        src="https://ssl.nexon.com/s2/game/fc/online/obt/externalAssets/season/HG.png"
+                                    /></span>
+                                    <span class="name"
+                                      ><span>비니시우스 주니어</span></span
+                                    >
+                                  </span>
+                                  <span class="pay">26</span>
+                                </div>
+                                <div class="price__wrap">
+                                  <span
+                                    class="price span_bp0"
+                                    style="display: none"
+                                    >-</span
+                                  >
+                                  <span class="price"
+                                    >75,400,000,000,000 BP</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
                       </div>
                     </div>
                     <!-- 선수 랭킹 표 -->

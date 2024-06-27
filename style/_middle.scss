@@ -684,7 +684,7 @@
           position: relative;
           background-color: #f9f9fb;
 
-          h2 {
+          .popular__tit {
             text-align: center;
             font-size: 16px;
             color: #889;
@@ -703,7 +703,7 @@
                 height: 28px;
                 text-align: center;
 
-                .active {
+                .po-active {
                   color: #fff;
                   background-color: #00c7ff;
                   border-color: #00c7ff;
@@ -811,9 +811,7 @@
             @include flexSame();
 
             .player {
-              width: calc(33.33% - 20px);
               height: 200px;
-              background-color: #04e45f;
 
               a {
                 display: block;
