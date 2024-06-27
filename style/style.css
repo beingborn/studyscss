@@ -1147,27 +1147,54 @@ button {
   border-left: 1px solid gray;
   border-right: 1px solid gray;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .column__title {
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .buildup__8 {
+  color: #695100 !important;
+  background: #f9dd62 !important;
+  background: linear-gradient(140deg, #f9dd62 0%, #f9dd62 0%, #dca908 100%) !important;
+  border: 1.5px solid #cda000 !important;
+  border-top-color: #e9d36c !important;
+  border-left-color: #e9d36c !important;
+  border-right-color: #cda000 !important;
+}
+.market__lank .content .co__wrap--flex .trade__market .con .player__table .up {
+  font-size: 13px;
+  letter-spacing: 0;
+  z-index: 2;
+  color: #4e545e;
+  font-weight: 900;
+  background: #020024;
+  background: linear-gradient(140deg, rgb(2, 0, 36) 0%, rgb(216, 217, 220) 0%, rgb(184, 189, 202) 100%);
+  border: 1.5px solid #a5a8ae;
+  line-height: 12px;
+  border-top-color: #d8dadc;
+  border-left-color: #d8dadc;
+  border-right-color: #a9aaae;
+  font-family: "EASANS";
+  line-height: 17.5px;
+  font-weight: 500;
+  vertical-align: top;
+}
+.market__lank .content .co__wrap--flex .column__title {
   justify-content: flex-start;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .column__title .more-btn {
+.market__lank .content .co__wrap--flex .column__title .more-btn {
   margin-left: auto;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .rank__tab ul {
+.market__lank .content .co__wrap--flex .rank__tab ul {
   display: flex;
   align-items: center;
   border-bottom: 1px solid gray;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .rank__tab ul li {
+.market__lank .content .co__wrap--flex .rank__tab ul li {
   width: 50%;
   text-align: center;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .rank__tab ul li .active {
+.market__lank .content .co__wrap--flex .rank__tab ul li .active {
   border-bottom: 3px solid #07c9a0;
   color: #000;
   font-weight: 600;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .rank__tab ul li a {
+.market__lank .content .co__wrap--flex .rank__tab ul li a {
   display: block;
   font-size: 14px;
   color: #9695a0;
@@ -1176,7 +1203,7 @@ button {
   font-weight: 400;
   position: relative;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .rank__tab ul li a::after {
+.market__lank .content .co__wrap--flex .rank__tab ul li a::after {
   position: absolute;
   top: 19px;
   right: 0;
@@ -1185,10 +1212,10 @@ button {
   background-color: #c9c9c9;
   content: "";
 }
-.market__lank .content .co__wrap--flex .trade__market .con .rank__tab ul li .last__con::after {
+.market__lank .content .co__wrap--flex .rank__tab ul li .last__con::after {
   display: none;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__cards {
+.market__lank .content .co__wrap--flex .player__cards {
   padding: 0;
   padding-top: 26px;
   padding-bottom: 25px;
@@ -1196,45 +1223,45 @@ button {
   display: flex;
   justify-content: space-between;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__cards .player {
+.market__lank .content .co__wrap--flex .player__cards .player {
   height: 200px;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__cards .player a {
+.market__lank .content .co__wrap--flex .player__cards .player a {
   display: block;
   width: 100%;
   height: 100%;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row {
+.market__lank .content .co__wrap--flex .player__table .desc-row {
   display: flex;
   align-items: center;
   border-bottom: 1px solid gray;
   padding: 0 8px;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(1) {
+.market__lank .content .co__wrap--flex .player__table .desc-row .td:nth-child(1) {
   color: #000;
   font-weight: 600;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(2) {
+.market__lank .content .co__wrap--flex .player__table .desc-row .td:nth-child(2) {
   width: 35px;
   height: 35px;
   padding: 0 5px;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(2) img {
+.market__lank .content .co__wrap--flex .player__table .desc-row .td:nth-child(2) img {
   width: 100%;
   height: 100%;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(3) {
+.market__lank .content .co__wrap--flex .player__table .desc-row .td:nth-child(3) {
   margin-right: 4px;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(3),
-.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(4) {
+.market__lank .content .co__wrap--flex .player__table .desc-row .td:nth-child(3),
+.market__lank .content .co__wrap--flex .player__table .desc-row .td:nth-child(4) {
   flex: 0 0 24px;
   padding: 0;
   height: 17px;
   position: relative;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(3) img,
-.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-child(4) img {
+.market__lank .content .co__wrap--flex .player__table .desc-row .td:nth-child(3) img,
+.market__lank .content .co__wrap--flex .player__table .desc-row .td:nth-child(4) img {
   position: absolute;
   top: 50%;
   left: 0;
@@ -1242,17 +1269,17 @@ button {
   width: 100%;
   height: 100%;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-last-child(1) {
+.market__lank .content .co__wrap--flex .player__table .desc-row .td:nth-last-child(1) {
   margin-left: auto;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td:nth-last-child(2) {
+.market__lank .content .co__wrap--flex .player__table .desc-row .td:nth-last-child(2) {
   margin-left: 8px;
   font-weight: 600;
   color: #000;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .player__table .desc-row .td {
+.market__lank .content .co__wrap--flex .player__table .desc-row .td {
   text-align: left;
-  font-size: 14px;
+  font-size: 13px;
   color: #9695a0;
   line-height: 40px;
   height: 40px;
@@ -1260,25 +1287,25 @@ button {
   position: relative;
   padding: 4px 0;
 }
-.market__lank .content .co__wrap--flex .trade__market .con .column__sub {
+.market__lank .content .co__wrap--flex .column__sub {
   margin-left: 20px;
   font-weight: 400;
 }
-.market__lank .content .co__wrap--flex .user__rank {
+.market__lank .user__rank {
   width: 50%;
 }
-.market__lank .content .co__wrap--flex .user__rank .con {
+.market__lank .user__rank .con {
   padding-left: 50px;
 }
-.market__lank .content .co__wrap--flex .user__rank .con .owner__rank {
+.market__lank .user__rank .con .owner__rank {
   display: flex;
   justify-content: space-between;
 }
-.market__lank .content .co__wrap--flex .user__rank .con .owner__rank .owner__info {
+.market__lank .user__rank .con .owner__rank .owner__info {
   width: calc(50% - 10px);
   height: 350px;
 }
-.market__lank .content .co__wrap--flex .user__rank .con .owner__rank .owner__info .game__info {
+.market__lank .user__rank .con .owner__rank .owner__info .game__info {
   padding: 30px 0;
   height: 126px;
   border-bottom: 1px dashed black;
@@ -1286,21 +1313,21 @@ button {
   justify-content: center;
   align-items: center;
 }
-.market__lank .content .co__wrap--flex .user__rank .con .owner__rank .owner__info .game__info .club__info {
+.market__lank .user__rank .con .owner__rank .owner__info .game__info .club__info {
   display: flex;
   justify-content: center;
   height: 40px;
   margin-bottom: 10px;
   vertical-align: top;
 }
-.market__lank .content .co__wrap--flex .user__rank .con .owner__rank .owner__info .game__info .club__info .official,
-.market__lank .content .co__wrap--flex .user__rank .con .owner__rank .owner__info .game__info .club__info .club {
+.market__lank .user__rank .con .owner__rank .owner__info .game__info .club__info .official,
+.market__lank .user__rank .con .owner__rank .owner__info .game__info .club__info .club {
   width: 40px;
   height: 40px;
   display: inline-block;
 }
-.market__lank .content .co__wrap--flex .user__rank .con .owner__rank .owner__info .game__info .club__info .official img,
-.market__lank .content .co__wrap--flex .user__rank .con .owner__rank .owner__info .game__info .club__info .club img {
+.market__lank .user__rank .con .owner__rank .owner__info .game__info .club__info .official img,
+.market__lank .user__rank .con .owner__rank .owner__info .game__info .club__info .club img {
   width: 100%;
   height: 100%;
 }
@@ -1316,7 +1343,7 @@ button {
   font-weight: 400;
   color: gray;
 }
-.club__detail .level {
+.club__detail .level_s {
   position: relative;
   z-index: 999;
 }
@@ -1378,7 +1405,7 @@ button {
 .user__table .desc-row .td:last-child {
   margin-left: auto;
 }
-.user__table .desc-row .level {
+.user__table .desc-row .level_s {
   position: absolute;
   top: 50%;
   left: 50%;

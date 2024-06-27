@@ -747,10 +747,52 @@
 
       .trade__market {
         width: 50%;
+
+
         .con {
           padding: 0 50px;
           border-left: 1px solid gray;
           border-right: 1px solid gray;
+
+
+          .player__table {
+            .desc-row {
+
+              .buildup__8{
+                color: #695100 !important;
+    background: #f9dd62 !important;
+    background: linear-gradient(140deg, #f9dd62 0%, #f9dd62 0%, #dca908 100%) !important;
+    border: 1.5px solid #cda000 !important;
+    border-top-color: #e9d36c !important;
+    border-left-color: #e9d36c !important;
+    border-right-color: #cda000 !important;
+}
+              }
+
+
+              .up {
+                font-size: 13px;
+                letter-spacing: 0;
+                z-index: 2;
+                color: #4e545e;
+                font-weight: 900;
+                background: #020024;
+                background: linear-gradient(140deg, rgb(2, 0, 36) 0%, rgb(216, 217, 220) 0%, rgb(184, 189, 202) 100%);
+                border: 1.5px solid #a5a8ae;
+                line-height: 12px;
+                border-top-color: #d8dadc;
+                border-left-color: #d8dadc;
+                border-right-color: #a9aaae;
+                font-family: "EASANS";
+                line-height: 17.5px;
+                font-weight: 500;
+                vertical-align: top;
+              }
+
+
+              }
+            }
+          }
 
           .column__title {
             justify-content: flex-start;
@@ -876,7 +918,7 @@
 
               .td {
                 text-align: left;
-                font-size: 14px;
+                font-size: 13px;
                 color: #9695a0;
                 line-height: 40px;
                 height: 40px;
@@ -940,8 +982,8 @@
         }
       }
     }
-  }
-}
+  
+
 
 .club__detail {
   text-align: center;
@@ -956,7 +998,7 @@
     color: gray;
   }
 
-  .level {
+  .level_s {
     position: relative;
     z-index: 999;
   }
@@ -1026,7 +1068,7 @@
       margin-left: auto;
     }
 
-    .level {
+    .level_s {
       position: absolute;
       top: 50%;
       left: 50%;
