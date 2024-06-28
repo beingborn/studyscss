@@ -128,6 +128,9 @@ button {
   width: 900px;
   margin-left: 125px;
 }
+.nav .header__ul li:last-child .nav__text {
+  color: #566cf3;
+}
 .nav .header__ul li {
   display: inline-block;
   width: 100px;
@@ -235,6 +238,7 @@ button {
   padding-top: 30px;
   height: 100%;
   box-sizing: border-box;
+  margin-right: 4px;
 }
 .slide__menu ul li a {
   display: block;
@@ -277,8 +281,6 @@ button {
 .main__banner {
   width: 100%;
   height: 640px;
-  background: url(/img/main__visual_0.jpg) no-repeat center;
-  background-size: cover;
   position: relative;
 }
 
@@ -287,6 +289,7 @@ button {
   top: 50%;
   transform: translateY(-50%);
   right: 200px;
+  z-index: 999;
 }
 .banner__nav ul li {
   height: 73px;
@@ -336,6 +339,39 @@ button {
 }
 .banner__nav .banner__move button:nth-child(1) {
   border-right: 1px solid #fff;
+}
+
+.main__banner .swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.main__banner .swiper .wrap {
+  width: 100%;
+}
+
+.main__banner .swiper-slide > a {
+  display: block;
+}
+
+.main__banner .swiper-slide > a .wrap {
+  margin: 0 auto;
+  height: 640px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.main__banner .swiper-slide > a .wrap img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main__banner .swiper-slide > .left__text .wrap img {
+  left: 70px;
+  transform: translate(0%, -50%);
 }
 
 .co__wrap {

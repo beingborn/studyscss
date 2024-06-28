@@ -75,6 +75,10 @@
     width: 900px;
     margin-left: 125px;
 
+    li:last-child .nav__text{
+      color: #566cf3;
+    }
+
     li {
       display: inline-block;
       width: 100px;
@@ -186,12 +190,15 @@
     overflow: hidden;
     padding-bottom: 32px;
 
+
+
     li {
       float: left;
       text-align: left;
       padding-top: 30px;
       height: 100%;
       box-sizing: border-box;
+      margin-right: 4px;
       // margin-left: 4px;
 
       a {
